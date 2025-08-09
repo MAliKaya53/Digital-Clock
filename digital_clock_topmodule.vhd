@@ -103,7 +103,6 @@ begin
         end if;
     end process;
     -- LED ataması
-    led <= (others => '0');
-    led(2 downto 0) <= s2(2 downto 0);
+    led <= s2 & s1;
     
 end Behavioral;
